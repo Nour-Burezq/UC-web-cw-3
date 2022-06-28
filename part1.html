@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Document</title>
+
+        <style>
+
+            h1{
+                position: relative;
+                animation: title 4s infinite;
+            }
+            .container{
+                width: 500px;
+            }
+            .box{
+                width: 150px;
+                height: 150px;
+                background-color: teal;
+                margin: 1px;
+                border-radius: 10px;
+                transition: 0.5;
+                border: 10px teal solid;
+            }
+
+            .box:hover{
+                border-color: turquoise;
+            }
+
+            @keyframes title {
+  0%   {background-color:teal; left:0px; top:0px;}
+  25%  {background-color:turquoise; left:200px; top:0px;}
+  50%  {background-color:teal; left:200px; top:0px;}
+  75%  {background-color:turquoise; left:0px; top:0px;}
+  100% {background-color:teal; left:0px; top:0px;}
+}
+        </style>
+</head>
+<body>
+    <h1 style="font-family: monospace;">welcome to our tic tac toe game!</h1>
+    <div class="container"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>
