@@ -9,12 +9,19 @@
             h1{
                 position: relative;
                 animation: title 4s infinite;
+                box-shadow: 2px 2px 5px gray;
             }
+
             .container{
-                width: 500px;
-
+               
+                width: 600px;
+                height: 500px;
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin: auto;
             }
-
           
             .box{
                 width: 150px;
@@ -24,6 +31,7 @@
                 border-radius: 10px;
                 transition: 0.5;
                 border: 10px teal solid;
+                box-shadow: -2px 2px 5px gray;
             }
 
             .box:hover{
@@ -42,16 +50,15 @@
 <body>
     <h1 style="font-family: monospace;">welcome to our tic tac toe game!</h1>
     <div class="container">
-
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
     </div>
 </body>
 </html>
